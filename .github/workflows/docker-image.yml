@@ -26,5 +26,5 @@ jobs:
         with:
           username: rawanda
           password: rawanda123
-          repository: rawanda/dockerpush
+          repository: rawanda/rawand
           tag_with_ref: true
