@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag rawanda/ project1
+      run: docker build . --file Dockerfile --tag rawanda/project1
  name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
