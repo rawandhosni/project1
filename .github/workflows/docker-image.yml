@@ -32,8 +32,9 @@ jobs:
           password: rawanda123
           repository: rawanda/project1 
           tag_with_ref: true
-  name: 'Write Config & Key Files'
-  
+                  
+-name: 'Write Config & Key Files'
+ run: |
         mkdir ~/.oci
         echo "[DEFAULT]" >> ~/.oci/config
         echo "user=${{secrets.OCI_USER_OCID}}" >> ~/.oci/config
@@ -42,4 +43,5 @@ jobs:
         echo "tenancy=${{secrets.OCI_TENANCY_OCID}}" >> ~/.oci/config
         echo "key_file=~/.oci/key.pem" >> ~/.oci/config
         echo "${{secrets.OCI_KEY_FILE}}" >> ~/.oci/key.pem
+          
   
