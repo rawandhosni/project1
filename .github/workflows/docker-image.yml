@@ -33,8 +33,8 @@ jobs:
           repository: rawanda/project1 
           tag_with_ref: true
                   
-name: 'Write Config & Key Files'
-run: |
+          name: 'Write Config & Key Files'
+           run: |
         mkdir ~/.oci
         echo "[DEFAULT]" >> ~/.oci/config
         echo "user=${{secrets.OCI_USER_OCID}}" >> ~/.oci/config
